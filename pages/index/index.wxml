@@ -1,0 +1,27 @@
+<view class="container">
+  <!-- 地区选择器 -->
+  <!-- <picker mode="region" bindchange="changeRegion">
+    <view>{{region}}</view>
+  </picker> -->
+  <!-- 地区区域 -->
+  <text>{{now.city.data}}</text>
+  <!-- 文本区域 -->
+  <text>{{now.temperature.data}}°C {{now.weather.data}}</text>
+  <!-- 图片区域 -->
+  <image src="/img/{{now.weather.data}}.png"></image>
+  <!-- 多行天气信息 -->
+  <view class="detail">
+    <view class="unit">
+      <view>湿度</view>
+      <view>{{now.humidity.data}}</view>
+    </view>
+    <view class="unit">
+      <view>风向</view>
+      <view>{{now.winddirection.data}}Pa</view>
+    </view>
+    <view class="unit">
+      <view>风力</view>
+      <view>{{now.windpower.data}}</view>
+    </view>
+  </view>
+</view>
